@@ -1,0 +1,9 @@
+{
+  "name": "ngx-str-cases",
+  "version": "0.0.1",
+  "description": "Transform a string between CamelCase, CapitalCase, ConstantCase, DotCase, HeaderCase, ParamCase, PascalCase, PathCase, SnakeCase, SentenceCase.",
+  "peerDependencies": {
+    "@angular/common": "^8.2.14",
+    "@angular/core": "^8.2.14"
+  }
+}
