@@ -1,27 +1,98 @@
-# NgxStrCase
+# NgxStrCases
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.22.
+Transform a string between CamelCase, CapitalCase, ConstantCase, DotCase, HeaderCase, ParamCase, PascalCase, PathCase, SnakeCase, SentenceCase.
 
-## Development server
+## Installation
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+```bash
+npm install ngx-str-cases
+```
 
-## Code scaffolding
+## Usage
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Edit your `app.module.ts` file:
 
-## Build
+```typescript
+import { NgxStrCasesModule } from 'ngx-str-cases';
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+...
+imports: [
+    BrowserModule,
+    NgxStrCasesModule
+],
 
-## Running unit tests
+...
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Now, You can simply use it in your view file like below:
+```html
+<p>{{'Test Match String' | camelcase}}</p>
+```
 
-## Running end-to-end tests
+## Core
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+- [`camelcase`](#camelcase)
+- [`capitalcase`](#capitalcase)
+- [`constantcase`](#constantcase)
+- [`dotcase`](#dotcase)
+- [`headercase`](#headercase)
+- [`paramcase`](#paramcase)
+- [`pascalcase`](#pascalcase)
+- [`pathcase`](#pathcase)
+- [`sentencecase`](#sentencecase)
+- [`snakecase`](#snakecase)
 
-## Further help
+#### camelcase
+> Transform into a string with the separator denoted by the next word capitalized.
+```html
+<p>{{'Test Match String' | camelcase}}</p>
+```
+#### capitalcase
+> Transform into a space separated string with each word capitalized.
+```html
+<p>{{'test match string' | capitalcase}}</p>
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+#### constantcase
+> Transform into upper case string with an underscore between words.
+```html
+<p>{{'test Match string' | constantcase}}</p>
+```
+#### dotcase
+> Transform into a lower case string with a period between words.
+```html
+<p>{{'test Match string' | dotcase}}</p>
+```
+#### headercase
+> Transform into a dash separated string of capitalized words.
+```html
+<p>{{'test Match string ' | headercase}}</p>
+```
+#### paramcase
+> Transform into a lower cased string with dashes between words.
+```html
+<p>{{'test Match string ' | paramcase}}</p>
+```
+#### pascalcase
+> Transform into a string of capitalized words without separators.
+```html
+<p>{{'test Match string ' | pascalcase}}</p>
+```
+#### pathcase
+> Transform into a lower case string with slashes between words.
+```html
+<p>{{'test Match string ' | pathcase}}</p>
+```
+#### sentencecase
+> Transform into a lower case with spaces between words, then capitalize the string.
+```html
+<p>{{'test Match string ' | sentencecase}}</p>
+```
+#### snakecase
+> Transform into a lower case string with underscores between words.
+```html
+<p>{{'test Match string ' | snakecase}}</p>
+```
+
+## License
+[MIT](https://github.com/RohitG157/NgxStrCase/blob/master/LICENSE)

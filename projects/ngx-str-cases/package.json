@@ -1,9 +1,31 @@
 {
-  "name": "ngx-str-cases",
-  "version": "0.0.1",
-  "description": "Transform a string between CamelCase, CapitalCase, ConstantCase, DotCase, HeaderCase, ParamCase, PascalCase, PathCase, SnakeCase, SentenceCase.",
-  "peerDependencies": {
-    "@angular/common": "^8.2.14",
-    "@angular/core": "^8.2.14"
-  }
+    "name": "ngx-str-cases",
+    "version": "0.0.1",
+    "description": "Transform a string between CamelCase, CapitalCase, ConstantCase, DotCase, HeaderCase, ParamCase, PascalCase, PathCase, SnakeCase, SentenceCase.",
+    "author": "Rohit Goyal <rohit157.rg@gmail.com>",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/RohitG157/NgxStrCase.git"
+    },
+    "bugs": {
+        "url": "https://github.com/RohitG157/NgxStrCase/issues"
+    },
+    "homepage": "https://github.com/RohitG157/NgxStrCase",
+    "keywords": [
+        "change case",
+        "convert",
+        "transform",
+        "camel case",
+        "capital case",
+        "constant case",
+        "dot case",
+        "header case",
+        "param case",
+        "pascal case"
+    ],
+    "license": "MIT",
+    "peerDependencies": {
+        "@angular/common": "^8.2.14",
+        "@angular/core": "^8.2.14"
+    }
 }
