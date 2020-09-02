@@ -1,6 +1,6 @@
 {
     "name": "ngx-str-cases",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "Transform a string between CamelCase, CapitalCase, ConstantCase, DotCase, HeaderCase, ParamCase, PascalCase, PathCase, SnakeCase, SentenceCase.",
     "author": "Rohit Goyal <rohit157.rg@gmail.com>",
     "repository": {
