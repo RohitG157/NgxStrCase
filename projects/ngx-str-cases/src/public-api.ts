@@ -13,3 +13,4 @@ export * from './lib/pipes/pascalcase.pipe';
 export * from './lib/pipes/pathcase.pipe';
 export * from './lib/pipes/sentencecase.pipe';
 export * from './lib/pipes/snakecase.pipe';
+export * from './lib/stringoperation/stringoperation.component';

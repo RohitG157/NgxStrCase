@@ -2,17 +2,19 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { NgxStrCasesModule } from 'ngx-str-cases';
+import { CamelcasePipe } from 'ngx-str-cases';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CamelcasePipe
   ],
   imports: [
-    BrowserModule,
-    NgxStrCasesModule
+    BrowserModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [
+      AppComponent  
+    ]
 })
 export class AppModule { }

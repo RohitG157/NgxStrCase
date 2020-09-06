@@ -1,5 +1,4 @@
 import { NgModule } from '@angular/core';
-import { NgxStrCasesComponent } from './ngx-str-cases.component';
 import { CamelcasePipe } from './pipes/camelcase.pipe';
 import { CapitalcasePipe } from './pipes/capitalcase.pipe';
 import { ConstantcasePipe } from './pipes/constantcase.pipe';
@@ -10,12 +9,12 @@ import { PascalcasePipe } from './pipes/pascalcase.pipe';
 import { PathcasePipe } from './pipes/pathcase.pipe';
 import { SnakecasePipe } from './pipes/snakecase.pipe';
 import { SentencecasePipe } from './pipes/sentencecase.pipe';
+import { StringOperation } from './stringoperation/stringoperation.component';
 
 
 
 @NgModule({
     declarations: [
-        NgxStrCasesComponent,
         CamelcasePipe, 
         CapitalcasePipe, 
         ConstantcasePipe, 
@@ -25,12 +24,12 @@ import { SentencecasePipe } from './pipes/sentencecase.pipe';
         PascalcasePipe, 
         PathcasePipe, 
         SnakecasePipe, 
-        SentencecasePipe
+        SentencecasePipe, 
+        StringOperation
     ],
     imports: [
     ],
     exports: [
-        NgxStrCasesComponent,
         CamelcasePipe, 
         CapitalcasePipe, 
         ConstantcasePipe, 
@@ -40,7 +39,8 @@ import { SentencecasePipe } from './pipes/sentencecase.pipe';
         PascalcasePipe, 
         PathcasePipe, 
         SnakecasePipe, 
-        SentencecasePipe
+        SentencecasePipe,
+        StringOperation
     ]
 })
 export class NgxStrCasesModule { }
