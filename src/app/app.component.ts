@@ -1,17 +1,16 @@
 import { Component } from '@angular/core';
-import { StringOperation } from 'ngx-str-cases';
+import { StringTransform } from 'ngx-str-cases';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss'],
-  providers: [StringOperation]
+  styleUrls: ['./app.component.scss']
 })
 
 export class AppComponent {
     title = "ngx-str-case";
 
     constructor(
-        private stringOps: StringOperation
+        private stringOps: StringTransform
     ) {
         let camelCaseString = this.stringOps.camelCase('test match string'); //testMatchString
         console.log(camelCaseString);

@@ -1,17 +1,14 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
     selector: 'Ngx-stringoperation',
     templateUrl: './stringoperation.component.html',
     styleUrls: ['./stringoperation.component.scss'],
 })
-export class StringOperation implements OnInit {
+export class StringOperation {
 
     constructor(
     ) { }
-
-    ngOnInit() {
-    }
 
     /*
         Convert String into Camel Case

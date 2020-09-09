@@ -1,4 +1,4 @@
-# NgxStrCases
+# Angular String Operation Library
 
 Transform a string between CamelCase, CapitalCase, ConstantCase, DotCase, HeaderCase, ParamCase, PascalCase, PathCase, SnakeCase, SentenceCase.
 
@@ -36,11 +36,11 @@ Now, there are two ways to use this awesome library:
 
 ### You can call the specific transform method in your component file:
 ```typescript
-import { StringOperation } from 'ngx-str-cases';
+import { StringTransform } from 'ngx-str-cases';
 
 ...
-constructor(private stringOps: StringOperation) {
-    let camelCaseString = stringOps.camelCase('test match string'); //testMatchString
+constructor(private stringOps: StringTransform) {
+    let string = stringOps.camelCase('test match string'); //testMatchString
 }
 
 ```
@@ -65,11 +65,11 @@ constructor(private stringOps: StringOperation) {
 ```
 or
 ```typescript
-import { StringOperation } from 'ngx-str-cases';
+import { StringTransform } from 'ngx-str-cases';
 
 ...
-constructor(private stringOps: StringOperation) {
-    let camelCaseString = stringOps.camelCase('test match string'); //testMatchString
+constructor(private stringOps: StringTransform) {
+    let string = stringOps.camelCase('test match string'); //testMatchString
 }
 
 ```
@@ -80,11 +80,11 @@ constructor(private stringOps: StringOperation) {
 ```
 or
 ```typescript
-import { StringOperation } from 'ngx-str-cases';
+import { StringTransform } from 'ngx-str-cases';
 
 ...
-constructor(private stringOps: StringOperation) {
-    let camelCaseString = stringOps.capitalCase('test match string'); //Test Match String
+constructor(private stringOps: StringTransform) {
+    let string = stringOps.capitalCase('test match string'); //Test Match String
 }
 
 ```
@@ -95,11 +95,11 @@ constructor(private stringOps: StringOperation) {
 ```
 or
 ```typescript
-import { StringOperation } from 'ngx-str-cases';
+import { StringTransform } from 'ngx-str-cases';
 
 ...
-constructor(private stringOps: StringOperation) {
-    let camelCaseString = stringOps.constantCase('test match string'); //TEST_MATCH_STRING
+constructor(private stringOps: StringTransform) {
+    let string = stringOps.constantCase('test match string'); //TEST_MATCH_STRING
 }
 
 ```
@@ -110,11 +110,11 @@ constructor(private stringOps: StringOperation) {
 ```
 or
 ```typescript
-import { StringOperation } from 'ngx-str-cases';
+import { StringTransform } from 'ngx-str-cases';
 
 ...
-constructor(private stringOps: StringOperation) {
-    let camelCaseString = stringOps.dotCase('test match string'); //test.match.string
+constructor(private stringOps: StringTransform) {
+    let string = stringOps.dotCase('test match string'); //test.match.string
 }
 
 ```
@@ -125,11 +125,11 @@ constructor(private stringOps: StringOperation) {
 ```
 or
 ```typescript
-import { StringOperation } from 'ngx-str-cases';
+import { StringTransform } from 'ngx-str-cases';
 
 ...
-constructor(private stringOps: StringOperation) {
-    let camelCaseString = stringOps.headerCase('test match string'); //Test-Match-String
+constructor(private stringOps: StringTransform) {
+    let string = stringOps.headerCase('test match string'); //Test-Match-String
 }
 
 ```
@@ -140,11 +140,11 @@ constructor(private stringOps: StringOperation) {
 ```
 or
 ```typescript
-import { StringOperation } from 'ngx-str-cases';
+import { StringTransform } from 'ngx-str-cases';
 
 ...
-constructor(private stringOps: StringOperation) {
-    let camelCaseString = stringOps.paramCase('test match string'); //test-match-string
+constructor(private stringOps: StringTransform) {
+    let string = stringOps.paramCase('test match string'); //test-match-string
 }
 
 ```
@@ -155,11 +155,11 @@ constructor(private stringOps: StringOperation) {
 ```
 or
 ```typescript
-import { StringOperation } from 'ngx-str-cases';
+import { StringTransform } from 'ngx-str-cases';
 
 ...
-constructor(private stringOps: StringOperation) {
-    let camelCaseString = stringOps.pascalCase('test match string'); //TestMatchString
+constructor(private stringOps: StringTransform) {
+    let string = stringOps.pascalCase('test match string'); //TestMatchString
 }
 
 ```
@@ -170,11 +170,11 @@ constructor(private stringOps: StringOperation) {
 ```
 or
 ```typescript
-import { StringOperation } from 'ngx-str-cases';
+import { StringTransform } from 'ngx-str-cases';
 
 ...
-constructor(private stringOps: StringOperation) {
-    let camelCaseString = stringOps.pathCase('test match string'); //test/match/string
+constructor(private stringOps: StringTransform) {
+    let string = stringOps.pathCase('test match string'); //test/match/string
 }
 
 ```
@@ -185,11 +185,11 @@ constructor(private stringOps: StringOperation) {
 ```
 or
 ```typescript
-import { StringOperation } from 'ngx-str-cases';
+import { StringTransform } from 'ngx-str-cases';
 
 ...
-constructor(private stringOps: StringOperation) {
-    let camelCaseString = stringOps.sentenceCase('test match string'); //Test match string
+constructor(private stringOps: StringTransform) {
+    let string = stringOps.sentenceCase('test match string'); //Test match string
 }
 
 ```
@@ -200,11 +200,11 @@ constructor(private stringOps: StringOperation) {
 ```
 or
 ```typescript
-import { StringOperation } from 'ngx-str-cases';
+import { StringTransform } from 'ngx-str-cases';
 
 ...
-constructor(private stringOps: StringOperation) {
-    let camelCaseString = stringOps.snakeCase('test match string'); //test_match_string
+constructor(private stringOps: StringTransform) {
+    let string = stringOps.snakeCase('test match string'); //test_match_string
 }
 
 ```

@@ -9,9 +9,6 @@ import { PascalcasePipe } from './pipes/pascalcase.pipe';
 import { PathcasePipe } from './pipes/pathcase.pipe';
 import { SnakecasePipe } from './pipes/snakecase.pipe';
 import { SentencecasePipe } from './pipes/sentencecase.pipe';
-import { StringOperation } from './stringoperation/stringoperation.component';
-
-
 
 @NgModule({
     declarations: [
@@ -24,8 +21,7 @@ import { StringOperation } from './stringoperation/stringoperation.component';
         PascalcasePipe, 
         PathcasePipe, 
         SnakecasePipe, 
-        SentencecasePipe, 
-        StringOperation
+        SentencecasePipe
     ],
     imports: [
     ],
@@ -39,8 +35,7 @@ import { StringOperation } from './stringoperation/stringoperation.component';
         PascalcasePipe, 
         PathcasePipe, 
         SnakecasePipe, 
-        SentencecasePipe,
-        StringOperation
+        SentencecasePipe
     ]
 })
 export class NgxStrCasesModule { }
